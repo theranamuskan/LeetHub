@@ -1,22 +1,18 @@
-class Solution
-{
+class Solution {
 public:
-    int pivotIndex(vector<int> &nums)
-    {
-        int sum = 0;
-        int leftsum = 0;
-        for (auto it : nums)
-        {
-            sum += it;
+    int pivotIndex(vector<int>& nums) {
+        int sum=0;
+        int leftSum=0;
+        for(auto it:nums){ //adding all the elements in the sum
+            sum+=it;
         }
-        for (int i = 0; i < nums.size(); i++)
-        {
-            if (leftsum == sum - leftsum - nums[i])
-            {
-                return i;
+        for(int i=0;i<nums.size();i++){ //traversing and checking
+            if(leftSum==sum-leftSum-nums[i]){
+                return i;  //if found return index
             }
-            leftsum += nums[i];
+            leftSum+=nums[i]; // else add numbers in the leftSum
         }
         return -1;
     }
+    
 };
