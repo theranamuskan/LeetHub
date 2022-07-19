@@ -11,9 +11,9 @@ public:
             if (nums[mid] == target)
                 return mid;
             if (nums[mid] < target)
-                left += 1;
+                left =mid+1;
             else
-                right -= 1;
+                right = mid-1;
         }
         return -1;
     }
