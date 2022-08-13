@@ -14,10 +14,10 @@ public:
             for(int j=0;j<words.size();j++){
                 mp[words[j]]++;
             }
-            int j;
-            for(j=0;j<n;j++){
+            int k;
+            for(k=0;k<n;k++){
                 
-                string temp=s.substr(i+j*m,m);
+                string temp=s.substr(i+k*m,m);
                 // cout<<temp<<" "<<i<<endl;
                 if(mp.count(temp)==0){
                     break;
@@ -31,7 +31,7 @@ public:
                     }
                 }
             }
-            if(j==n){
+            if(k==n){
                 ans.push_back(i);
             }
             
