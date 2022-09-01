@@ -4,7 +4,6 @@
 //         int n = matrix.size();
 //         int m = matrix[0].size();
         
-// 		//checking some base bases
 //         if(n == 0 || m == 0)
 //             return false;
         
