@@ -27,9 +27,9 @@ public:
                 c2_count++;
 
         vector<int> result;
-        if (c1_count > size(nums) / 3)
+        if (c1_count > nums.size() / 3)
             result.push_back(c1);
-        if (c2_count > size(nums) / 3)
+        if (c2_count > nums.size() / 3)
             result.push_back(c2);
         return result;
     }
