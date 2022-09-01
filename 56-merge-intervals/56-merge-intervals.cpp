@@ -4,7 +4,7 @@ public:
         if(intervals.size()<=1){
             return intervals;
         }
-        // sort(intervals.begin(),intervals.end());//This is slow
+        // sort(intervals.begin(),intervals.end());
         sort(intervals.begin(),intervals.end(),[](const vector<int> &v1, const vector<int> &v2){ return v1[0] < v2[0]; });
         vector<vector<int>> result;
         result.push_back(intervals[0]);
