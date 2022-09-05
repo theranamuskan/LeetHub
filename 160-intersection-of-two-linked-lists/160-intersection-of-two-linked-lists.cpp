@@ -21,7 +21,7 @@ public:
             a = a == NULL ? headB : a->next;
             b = b == NULL ? headA : b->next;
         }
-        // return a;
+        // return a; you can return anyone "a" or "b"
         return b;
     }
 };
